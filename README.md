@@ -6,7 +6,7 @@ En caso de que no se reciba ningún parámetro, la aplicación cliente tiene asi
 Para visualizar los resultados se crea un archivo .csv, que contiene la matriz de distancias evolutivas de las secuencias proporcionadas.
 La distancia evolutiva es calculada utilizando recuento fraccionario común de k-mer, la distancia se calcula en función del recuento mínimo de cada k-mer en las dos secuencias, por lo que si dos secuencias son muy diferentes, los mínimos serán pequeños. La fórmula es la siguiente:
 
-$\displaystyle \textrm{dist}(s_1,s_2) = \log(0.1 + \sum_i(\min(p(s_1)_i,p(s_2)_i)/(\min(n,m)-k+1)).$.
+$$\displaystyle $\textrm{dist}(s_1,s_2) = \log(0.1 + \sum_i(\min(p(s_1)_i,p(s_2)_i)/(\min(n,m)-k+1)).$$
 
 Aquí $ n$ es la longitud de $ s_1$ y $ m$ es la longitud de $ s_2$ . 
 Este método se ha descrito en [Edgar, 2004]. 
